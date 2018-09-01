@@ -8,8 +8,8 @@ include $SER_ROOT."/modules/navbar.php";
 
 // require_once $SER_ROOT."/config/Logger.php";
 require_once $SER_ROOT."/service/AccessLog.php";
-?>
 
+?>
 <section class="section">
 	<div class="container">
 		<h1 class="title">
@@ -34,7 +34,7 @@ require_once $SER_ROOT."/service/AccessLog.php";
 				<div class="box">1</div>
 			</div>
 			<div class="column">
-				<div class="box">1</div>
+				<div class="box"><?php print_r(get_browser(null, true)) ?></div>
 			</div>
 		</div>
 		<div class="columns">
@@ -56,8 +56,11 @@ require_once $SER_ROOT."/service/AccessLog.php";
 </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 <script>
-	var data = JSON.parse('<?=$accessLog->getAllLogs()?>');
-	console.log(data);
+	var browserDistData = JSON.parse('<?=$accessLogObj->getBrowserDist()?>');
+	console.log(browserDistData);
+
+	var osDistData = JSON.parse('<?=$accessLogObj->getOsDist()?>');
+	console.log(osDistData);
 
 </script>
 <?php
