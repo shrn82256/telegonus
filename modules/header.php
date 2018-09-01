@@ -2,7 +2,7 @@
 // require_once $SER_ROOT."/check.php";
 ?>
 <!DOCTYPE html>
-<html>
+<html class="has-navbar-fixed-top">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +14,7 @@
 	
 	<script src="<?=$SER_ROOT?>/js/jquery-3.3.1.min.js"></script>
 	<script src="<?=$SER_ROOT?>/js/jquery.md5.js"></script>
+
 </head>
 <body>
 <style type="text/css">

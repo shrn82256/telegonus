@@ -11,7 +11,7 @@
 		font-family: 'Cinzel', serif;
 	}
 </style>
-<nav class="navbar is-transparent">
+<nav class="navbar is-transparent is-fixed-top is-dark">
 	<div class="navbar-brand">
 		<a class="navbar-item" href="<?=$SER_ROOT?>">
 			<strong class="navbar-brand-text brand-font">
@@ -46,11 +46,18 @@
 		</div>
 
 		<div class="navbar-end">
-			<a class="navbar-item" href="https://github.paypal.com/CPIHACK2018/dfp/" target="_blank">
-				<span class="icon" style="color: #333;">
-					<i class="fab fa-lg fa-github-alt"></i>
-				</span>
-			</a>
+			<div class="navbar-item">
+				<div class="field is-grouped">
+					<p class="control">
+						<a class="button is-light" href="https://github.com/shrn82256/telegonus">
+							<span class="icon">
+								<i class="fab fa-lg fa-github-alt has-text-dark"></i>
+							</span>
+							<!-- <span>Github</span> -->
+						</a>
+					</p>
+				</div>
+			</div>
 			<div class="navbar-item">
 				<div class="field is-grouped">
 					<p class="control">

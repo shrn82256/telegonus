@@ -11,7 +11,7 @@ if (isset($_POST) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttpre
 	$lang = $_POST["lang"];
 	$timeZone = $_POST["timeZone"];
 
-	$result = $accessLog->logUser($userAgent, $canvasHash, $resHeight, $resWidth, $colorDepth, $lang, $timeZone);
+	$result = $accessLogObj->logUser($userAgent, $canvasHash, $resHeight, $resWidth, $colorDepth, $lang, $timeZone);
 
 	echo $result;
 }

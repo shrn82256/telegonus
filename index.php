@@ -19,7 +19,7 @@
 		$('.result-text').html(canvasHash);
 		// $('.result-img').attr('src', canvasHash);
 
-		// logUser("add2log.php", canvasHash, getResolutionHeight(), getResolutionWidth(), getColorDepth(), getLanguage(), getDateandTime());
+		logUser(canvasHash, getResolutionHeight(), getResolutionWidth(), getColorDepth(), getLanguage(), getDateandTime());
 	});
 </script>
 </body>

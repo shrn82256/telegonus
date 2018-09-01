@@ -14,11 +14,12 @@ $( document ).ready(function() {
 		{os: 'iOS', tag: 'fab fa-app-store-ios has-text-info'},
 		{os: 'Linux', tag: 'fab fa-linux has-text-orange'},
 		{os: 'Android', tag: 'fab fa-android has-text-success'},
-		{os: 'Macintosh', tag: 'fab fa-apple has-text-dark'}
+		{os: 'macOS', tag: 'fab fa-apple has-text-dark'},
+		{os: 'Curl', tag: 'fas fa-terminal has-text-black'}
 	];
 
 	var browser_list = [
-		{browser: 'Mozilla', tag: 'fab fa-firefox has-text-orange'},
+		{browser: 'Firefox Mobile', tag: 'fab fa-firefox has-text-orange'},
 		{browser: 'Firefox', tag: 'fab fa-firefox has-text-orange'},
 		{browser: 'Safari', tag: 'fab fa-safari has-text-info'},
 		{browser: 'Edge', tag: 'fab fa-edge has-text-link'},
@@ -27,11 +28,12 @@ $( document ).ready(function() {
 		{browser: 'Opera', tag: 'fab fa-opera has-text-danger'},
 		{browser: 'Opera Mini', tag: 'fab fa-opera has-text-danger'},
 		{browser: 'Opera Mobile', tag: 'fab fa-opera has-text-danger'},
-		{browser: 'Chrome', tag: 'fab fa-chrome has-text-primary'}
+		{browser: 'Chrome', tag: 'fab fa-chrome has-text-primary'},
+		{browser: 'Curl', tag: 'fas fa-terminal has-text-black'}
 	];
 
-	$('.get-os-icon').each(function() {
-		var os = $(this).html();
+	$('td[data-osname]').each(function() {
+		var os = $(this).data('osname');
 
 		for (var i = 0; i < os_list.length; i++) {
 			if (os_list[i].os == os) {
@@ -41,8 +43,8 @@ $( document ).ready(function() {
 		}		
 	});
 	
-	$('.get-browser-icon').each(function() {
-		var browser = $(this).html();
+	$('td[data-browsername]').each(function() {
+		var browser = $(this).data('browsername');
 
 		for (var i = 0; i < browser_list.length; i++) {
 			if (browser_list[i].browser == browser) {
@@ -56,16 +58,15 @@ $( document ).ready(function() {
 		var safety_class = parseInt($(this).html());
 
 		if (parseInt(safety_class) == 1) {
-			$(this).html('<i class="far fa-smile-beam"></i> Safe Hai');
+			$(this).html('<i class="far fa-smile-beam"></i> Safe');
 			$(this).addClass('has-text-success');
-		} else {
-			$(this).html('<i class="far fa-angry"></i> Unsafe Hai');
+		} else if (parseInt(safety_class) == 2) {
+			$(this).html('<i class="far fa-angry"></i> Unsafe');
 			$(this).addClass('has-text-danger');
+		} else {
+			$(this).html('<i class="fas fa-exclamation-triangle"></i> Absent');
+			$(this).addClass('has-text-orange');
 		}
-	});
-
-	$('.convert-to-md5').each(function() {
-		$(this).html($.md5($(this).html()));
 	});
 
 	$('[data-option-id="<?=$PAGE_ID?>"]').addClass('has-text-weight-bold');
