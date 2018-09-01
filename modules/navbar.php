@@ -1,6 +1,6 @@
 <style type="text/css">
 	@import url('https://fonts.googleapis.com/css?family=Sacramento');
-	@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+	@import url('https://fonts.googleapis.com/css?family=Cinzel');
 	
 	.navbar-brand-text {
 		font-size: 2rem;
@@ -8,7 +8,7 @@
 
 	.brand-font {
 		/*font-family: 'Sacramento', cursive;*/
-		font-family: 'Playfair Display', serif;
+		font-family: 'Cinzel', serif;
 	}
 </style>
 <nav class="navbar is-transparent">
