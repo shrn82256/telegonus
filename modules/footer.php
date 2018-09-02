@@ -13,6 +13,7 @@ $( document ).ready(function() {
 		{os: 'Windows', tag: 'fab fa-windows has-text-link'},
 		{os: 'iOS', tag: 'fab fa-app-store-ios has-text-info'},
 		{os: 'Linux', tag: 'fab fa-linux has-text-orange'},
+		{os: 'Ubuntu', tag: 'fab fa-linux has-text-orange'},
 		{os: 'Android', tag: 'fab fa-android has-text-success'},
 		{os: 'macOS', tag: 'fab fa-apple has-text-dark'},
 		{os: 'Curl', tag: 'fas fa-terminal has-text-black'}
