@@ -120,7 +120,7 @@ class AccessLog {
 
 		require __DIR__."/Connection.php";
 		
-		$sql = "SELECT * FROM `access_log`";
+		$sql = "SELECT * FROM `access_log` ORDER BY datetime DESC";
 
 		$result = $conn->query($sql);
 

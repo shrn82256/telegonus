@@ -1,15 +1,10 @@
 <style type="text/css">
 	@import url('https://fonts.googleapis.com/css?family=Sacramento');
-	@import url('https://fonts.googleapis.com/css?family=Cinzel');
 	
 	.navbar-brand-text {
 		font-size: 2rem;
 	}
 
-	.brand-font {
-		/*font-family: 'Sacramento', cursive;*/
-		font-family: 'Cinzel', serif;
-	}
 </style>
 <nav class="navbar is-transparent is-fixed-top is-dark">
 	<div class="navbar-brand">
@@ -70,7 +65,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="navbar-item">
+			<!-- <div class="navbar-item">
 				<div class="field is-grouped">
 					<p class="control">
 						<a class="button is-danger" href="<?=$SER_ROOT?>/logout.php">
@@ -81,7 +76,7 @@
 						</a>
 					</p>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </nav>

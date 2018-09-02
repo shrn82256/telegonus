@@ -18,6 +18,8 @@
 </head>
 <body>
 <style type="text/css">
+	@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
 	html, body {
 		height: 100%;
 		background-color: transparent;
@@ -44,5 +46,14 @@
 
 	.has-text-orange {
 		color: #ffa500;
+	}
+
+	.brand-font {
+		font-family: 'Cinzel', serif;
+	}
+
+	.is-vertical-center {
+		display: flex;
+		align-items: center;
 	}
 </style>
