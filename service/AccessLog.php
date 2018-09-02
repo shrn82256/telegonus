@@ -214,7 +214,7 @@ class AccessLog {
 		
 		require __DIR__."/Connection.php";
 		
-		$sql = "SELECT osname, osversion, browsername, browserversion, canvashash FROM access_log WHERE isgenuine=1 GROUP BY canvashash, browsername, browserversion, osname, osversion";
+		$sql = "SELECT osname, osversion, browsername, browserversion, canvashash FROM access_log WHERE isgenuine=1 GROUP BY canvashash, browsername, browserversion, osname, osversion ORDER BY osname, osversion, browsername, browserversion";
 
 		$result = $conn->query($sql);
 
